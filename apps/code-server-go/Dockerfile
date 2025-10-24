@@ -5,7 +5,7 @@ FROM ghcr.io/coder/code-server:${VERSION}
 USER root
 
 ARG TARGETPLATFORM
-# renovate: datasource=golang-version
+# renovate: datasource=golang-version depName=golang
 ARG GOLANG_VERSION=1.25.3
 
 RUN set -eux; \
