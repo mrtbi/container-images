@@ -12,6 +12,6 @@ func Test(t *testing.T) {
 	image := testhelpers.GetTestImage("ghcr.io/mrtbi/code-server-go:rolling")
 
 	t.Run("Go binary version check", func(t *testing.T) {
-		testhelpers.TestCommandSucceeds(t, ctx, image, nil, "/bin/sh", "go -v")
+		testhelpers.TestCommandSucceeds(t, ctx, image, nil, "/bin/sh", "go", "-v")
 	})
 }
